@@ -56,7 +56,7 @@ if TYPE_CHECKING:
     from crewai.utilities.types import LLMMessage
 
 
-class CrewAgentExecutor(CrewAgentExecutorMixin):
+class CrewAgent(CrewAgentExecutorMixin):
     """Executor for crew agents.
 
     Manages the execution lifecycle of an agent including prompt formatting,
