@@ -10,7 +10,7 @@ from crewai.tasks.task_output import TaskOutput
 from crewai.types.usage_metrics import UsageMetrics
 
 
-class CrewOutputV2(BaseModel):
+class CrewOutputV3(BaseModel):
     """Class that represents the result of a crew."""
 
     raw: str = Field(description="Raw output of crew", default="")
