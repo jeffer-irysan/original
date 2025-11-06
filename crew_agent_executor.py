@@ -12,7 +12,7 @@ from typing import TYPE_CHECKING, Any, Literal, cast
 from pydantic import BaseModel, GetCoreSchemaHandler
 from pydantic_core import CoreSchema, core_schema
 
-from crewai.agents.agent_builder.base_agent_executor_mixin import CrewOutput
+from crewai.agents.agent_builder.base_agent_executor_mixin import CrewAgentExecutorMixin
 from crewai.agents.parser import (
     AgentAction,
     AgentFinish,
@@ -56,7 +56,7 @@ if TYPE_CHECKING:
     from crewai.utilities.types import LLMMessage
 
 
-class CrewOutput(CrewOutputMixin):
+class CrewAgentExecutor(CrewAgentExecutorMixin):
     """Executor for crew agents.
 
     Manages the execution lifecycle of an agent including prompt formatting,
