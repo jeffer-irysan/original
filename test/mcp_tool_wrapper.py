@@ -11,7 +11,7 @@ MCP_DISCOVERY_TIMEOUT = 15
 MCP_MAX_RETRIES = 3
 
 
-class MCPToolWrapperTool(BaseTool):
+class MCPToolWrapperToolv1(BaseTool):
     """Lightweight wrapper for MCP tools that connects on-demand."""
 
     def __init__(
